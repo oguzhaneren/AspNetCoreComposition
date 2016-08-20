@@ -2,10 +2,6 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.0",
-      "type": "platform"
-    },
 
     "Microsoft.AspNetCore.Http": "1.0.0",
     "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
@@ -16,16 +12,12 @@
     "Microsoft.Extensions.Logging": "1.0.0",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
-    "Microsoft.AspNetCore.Mvc.Core": "1.0.0"
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.0-*"
   },
 
   "frameworks": {
-
-    "netcoreapp1.0": {
-      "imports": [
-        "dotnet5.6",
-        "portable-net45+win8"
-      ]
-    }
+    "net46": {},
+    "net451": {},
+    "netstandard1.6": {}
   }
 }
