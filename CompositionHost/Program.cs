@@ -46,12 +46,10 @@ namespace CompositionHost
 
         public IConfigurationRoot Configuration { get; }
 
-
         public void ConfigureServices(IServiceCollection services)
         {
             _services = services;
         }
-
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
@@ -60,10 +58,7 @@ namespace CompositionHost
 
             app.CreateBranch(new PathString("/context1"), env, loggerFactory, _services, new Context1.Startup(Configuration));
             app.CreateBranch(new PathString("/context2"), env, loggerFactory, _services, new Context2.Startup(Configuration));
-
         }
-
-
     }
 
 
